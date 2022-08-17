@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HADIS : Halal Readiness Report</title>
+    <style>
+        body {
+            background-color: rgb(247, 247, 247);
+            font-family: poppins, sans-serif, verdana;
+        }
+
+        td {
+            text-align: left;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <table style="width: 800px;">
+            <thead>
+                <tr>
+                    <td>
+                        <img src="https://hadisprod.blob.core.windows.net/images/logo-sm.jpg" />
+                    </td>
+                    <td>
+                        <table style="width: auto; float: right;">
+                            <tbody>
+                                <tr>
+                                    <td style="padding: 2px;">Date</td>
+                                    <td style="padding: 2px; width: auto;">:&nbsp;{Assessment_Date}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 2px;">Company</td>
+                                    <td style="padding: 2px; width: auto;">:&nbsp;{Company_Name}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 2px; white-space: nowrap;">Name of Receipient</td>
+                                    <td style="padding: 2px; width: auto; white-space: nowrap;">:&nbsp;{Contact_Name}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <center>
+                            <img src="https://hadisprod.blob.core.windows.net/images/email-banner.png" />
+                            <h1>Halal Readiness Report</h1>
+                        </center>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2" style="text-align: center;">Dear&nbsp;{Contact_Name}, we have receive your submission of Halal Readiness Report at&nbsp;{Assessment_Time}&nbsp;on&nbsp;{Assessment_Date}.</td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">Here is the summary of your Halal Readiness Report.</td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center; margin: 15px;">
+                        <table style="width: 781px; padding: 15px; background-color: rgb(232, 232, 232); ">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 30%;">Assessment Date</td>
+                                    <td style="width: 70%;">:&nbsp;{Assessment_Date}</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 30%;">Company</td>
+                                    <td style="width: 70%; text-transform: uppercase;">:&nbsp;{Company_Name}</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 30%;">Contact Person</td>
+                                    <td style="width: 70%; text-transform: uppercase;">:&nbsp;{Contact_Name}</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 30%;">Email</td>
+                                    <td style="width: 70%; text-transform: uppercase;">:&nbsp;{Email}</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 30%;">Phone No.</td>
+                                    <td style="width: 70%; text-transform: uppercase;">:&nbsp;{Phone_No}</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 30%;">Halal Certification Scheme</td>
+                                    <td style="width: 70%; text-transform: uppercase;">:&nbsp;{Halal_Cert_Scheme_Description}</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 30%;">Total Comply</td>
+                                    <td style="">:&nbsp;{Total_Comply}%</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 30%;">Total Non-Comply</td>
+                                    <td style="">:&nbsp;{Total_Non_Comply}%</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">{Questions_And_Answers}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center; padding-bottom: 31px;">Thank you for your continued trust in our services and we look forward to serve you better in the future.</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">
+                        <img src="https://hadisprod.blob.core.windows.net/images/email-footer.png" />
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </center>
+</body>
+</html>
